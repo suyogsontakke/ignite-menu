@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGNITE 2025 | Official Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/HkXcxcgX/1758263167091.png">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/HkXcxcgX/1758263167091.png">
+    <style>
+        :root {
+            --bg-dark: #0B120E;
+            --bg-light: #111A15;
+            --primary-green: #16FF00;
+            --text-primary: #f8fafc;
+            --text-secondary: #a0aec0;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            background-image: linear-gradient(180deg, var(--bg-dark) 0%, #000000 100%);
+            color: var(--text-secondary);
+        }
+        .neon-text {
+            color: var(--primary-green);
+            text-shadow: 0 0 5px var(--primary-green), 0 0 15px var(--primary-green), 0 0 30px #0c4d05;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .accordion-button.active + .accordion-content {
+            max-height: 2000px; /* Increased max-height for more items */
+        }
+        .accordion-button .accordion-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        .accordion-button.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="min-h-screen p-4 sm:p-6 lg:p-8 flex flex-col">
+        <div class="max-w-4xl mx-auto w-full">
+
+            <header class="text-center py-12">
+                <h1 class="text-6xl sm:text-7xl md:text-8xl neon-text" style="font-family: 'Bebas Neue', cursive;">IGNITE 2025 MENU</h1>
+                <h2 class="text-2xl sm:text-3xl font-bold text-text-primary mt-4">Exclusively at <span class="text-[var(--primary-green)]">TOQUO</span></h2>
+                <p class="mt-4 max-w-2xl mx-auto text-base sm:text-lg text-text-secondary">
+                    Toquo is a high-energy Pan-Asian bar and restaurant located in Gokulpeth, Nagpur. Situated on the 8th and 9th floors of the West High Building, it offers a vibrant dining experience with a modern take on traditional Asian cuisine.
+                </p>
+            </header>
+
+            <div class="space-y-4">
+
+                <!-- Starters Section -->
+                <div class="bg-bg-light border border-gray-800 rounded-lg shadow-lg">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left text-2xl font-bold text-text-primary hover:bg-gray-800 transition-colors duration-300">
+                        <span style="font-family: 'Bebas Neue', cursive; letter-spacing: 1px;">Japanese Tapas/Starters</span>
+                        <svg class="accordion-icon w-6 h-6 text-[var(--primary-green)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="p-5 border-t border-gray-800">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Menu Item 1 -->
+                                <div class="bg-gray-900/50 p-4 rounded-lg">
+                                    <img src="https://i.postimg.cc/DfQVSs7P/chilli-potato.png" alt="Classic Chilli Potato" class="w-full aspect-square rounded-md object-cover mb-4">
+                                    <div>
+                                        <h3 class="font-bold text-lg text-text-primary">Classic Chilli Potato</h3>
+                                        <p class="text-sm text-text-secondary mt-1">Experience the perfect crunch with our golden-fried potato fingers, wok-tossed in a vibrant, tangy, and sweet chili sauce with crisp onions and bell peppers. A timeless appetizer that's irresistibly savory and spicy.</p>
+                                    </div>
+                                </div>
+                                <!-- Menu Item 2 -->
+                                <div class="bg-gray-900/50 p-4 rounded-lg">
+                                    <img src="https://i.postimg.cc/gJC6QQx8/sushi.png" alt="Sushi" class="w-full aspect-square rounded-md object-cover mb-4">
+                                    <div>
+                                        <h3 class="font-bold text-lg text-text-primary">Crispy Vegetable Sushi</h3>
+                                        <p class="text-sm text-text-secondary mt-1">A delightful textural contrast in every bite. An assortment of fresh, crisp vegetables and creamy avocado, rolled in seasoned sushi rice and nori, then finished with a crunchy tempura coating. Served with a drizzle of our signature sauce for the perfect umami finish.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-900/50 p-4 rounded-lg">
+                                    <img src="https://i.postimg.cc/fyPYzyqt/dimsum.png" alt="Dimsum" class="w-full aspect-square rounded-md object-cover mb-4">
+                                    <div>
+                                        <h3 class="font-bold text-lg text-text-primary">Crystal Vegetable Dimsum</h3>
+                                        <p class="text-sm text-text-secondary mt-1">Delicate, translucent wrappers envelop a finely minced medley of vibrant, seasoned vegetables. Gently steamed to perfection, these bite-sized dumplings offer a clean, flavorful, and wonderfully light experience. Served with a classic dipping sauce to complement the fresh filling.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Course Section -->
+                <div class="bg-bg-light border border-gray-800 rounded-lg shadow-lg">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left text-2xl font-bold text-text-primary hover:bg-gray-800 transition-colors duration-300">
+                        <span style="font-family: 'Bebas Neue', cursive; letter-spacing: 1px;">Japanese Main Course</span>
+                        <svg class="accordion-icon w-6 h-6 text-[var(--primary-green)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="p-5 border-t border-gray-800">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Menu Item 3 -->
+                                <div class="bg-gray-900/50 p-4 rounded-lg">
+                                    <img src="https://i.postimg.cc/8z4McZYg/rice.png" alt="Rice" class="w-full aspect-square rounded-md object-cover mb-4">
+                                    <div>
+                                        <h3 class="font-bold text-lg text-text-primary">Vegetable Fried Rice</h3>
+                                        <p class="text-sm text-text-secondary mt-1">A quintessential comfort classic, perfected in our high-heat wok. Fluffy, long-grain rice is stir-fried with a colorful mix of crisp, garden-fresh vegetables and seasoned with a light and savory soy-based sauce. Simple, aromatic, and deeply satisfying.</p>
+                                    </div>
+                                </div>
+                                <!-- Menu Item 4 -->
+                                <div class="bg-gray-900/50 p-4 rounded-lg">
+                                    <img src="https://i.postimg.cc/cLSBrg4w/noodles.png" alt="Noodles" class="w-full aspect-square rounded-md object-cover mb-4">
+                                    <div>
+                                        <h3 class="font-bold text-lg text-text-primary">Stir Fried Noodles</h3>
+                                        <p class="text-sm text-text-secondary mt-1">Springy noodles wok-tossed over a roaring flame to capture that signature smoky 'wok hei' aroma. This classic dish features a crunchy selection of fresh vegetables, all brought together in a rich, savory sauce that perfectly coats every single strand.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-900/50 p-4 rounded-lg">
+                                    <img src="https://i.postimg.cc/Pf7D8LKN/mala-sauce.png" alt="Mala Sauce" class="w-full aspect-square rounded-md object-cover mb-4">
+                                    <div>
+                                        <h3 class="font-bold text-lg text-text-primary">Vegetable Mala Sauce</h3>
+                                        <p class="text-sm text-text-secondary mt-1">Brace yourself for an electrifying flavor journey. A curated selection of exotic, crisp vegetables are stir-fried in our authentic Mala sauce, famous for its unique numbing (ma) and spicy (la) sensation derived from Sichuan peppercorns and fiery chilies. A bold and addictive dish for the adventurous palate.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts Section -->
+                <div class="bg-bg-light border border-gray-800 rounded-lg shadow-lg">
+                    <button class="accordion-button w-full flex justify-between items-center p-5 text-left text-2xl font-bold text-text-primary hover:bg-gray-800 transition-colors duration-300">
+                        <span style="font-family: 'Bebas Neue', cursive; letter-spacing: 1px;">Desserts</span>
+                        <svg class="accordion-icon w-6 h-6 text-[var(--primary-green)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="p-5 border-t border-gray-800">
+                           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Menu Item 5 -->
+                                <div class="bg-gray-900/50 p-4 rounded-lg">
+                                    <img src="https://i.postimg.cc/mgYTRqtB/cake.png" alt="Cake" class="w-full aspect-square rounded-md object-cover mb-4">
+                                    <div>
+                                        <h3 class="font-bold text-lg text-text-primary">Toquo Tres Leches</h3>
+                                        <p class="text-sm text-text-secondary mt-1">A Japanese-inspired twist on the beloved Latin classic. Our incredibly light and airy sponge cake is soaked in a signature blend of three milks, creating a dessert that is unbelievably moist and decadent. Finished with a delicate, lightly sweetened cream topping for a melt-in-your-mouth experience that's both rich and refreshing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <footer class="text-center py-8 mt-auto">
+             <p class="text-sm text-gray-500">© 2025 Suyog Sontakke. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionButtons = document.querySelectorAll('.accordion-button');
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    button.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
